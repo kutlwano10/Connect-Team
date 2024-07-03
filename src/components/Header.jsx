@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import homeIcon from "../assets/home.png";
 import profile from "../assets/profile.png";
 import searchUser from "../assets/search-user.png";
-
+import settingsLines from "../assets/setting-lines.png"
 const Header = () => {
   return (
     <>
@@ -16,7 +16,7 @@ const Header = () => {
           <img  src={searchUser}  alt="" />
         </Link>
         <Link to="/settings" className="w-9 ">
-          <img src={profile} alt="" />
+          <img src={settingsLines} alt="" />
         </Link>
       </div>
       

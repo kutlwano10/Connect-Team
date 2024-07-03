@@ -1,14 +1,25 @@
 import React from "react";
 import background from "../assets/background.jpg";
 import profileImg from "../assets/img.jpg";
+import Header from "./Header";
+import { Link } from "react-router-dom";
 
 const ProfileInfo = () => {
   return (
-    <div className="bg-gray-100 min-h-screen flex justify-center ">
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden w-full w-4xl">
+    <>
+    <Header/>
+    <div className="bg-gray-100 min-h-screen w-screen p-3 ">
+      <div>
+      
+      </div>
+      <div
+        style={{ height: "50vh" }}
+        className="bg-white rounded-lg shadow-lg overflow-hidden w-full w-4xl px-2 mt-12 "
+      >
+        
         <div className="relative">
           <img
-            className="w-full h-36 object-cover"
+            className="w-full rounded-lg h-36 object-cover"
             src={background}
             alt="Background"
           />
@@ -20,8 +31,20 @@ const ProfileInfo = () => {
             />
           </div>
         </div>
+        <div className="pt-20 px-4 pb-20">
+          <h1 className="text-l font-bold">Keabetswe Mosupi</h1>
+          <p className="text-gray-600 text-sm">
+            Software Dev | Content Creator
+          </p>
+        </div>
+        
       </div>
+      <div className="grid grid-cols-1 mt-8">
+          <a href="" className="">My Github Profile</a>
+        </div>
+      
     </div>
+    </>
   );
 };
 
