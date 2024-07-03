@@ -53,28 +53,28 @@ const ProfileInfo = () => {
             className="flex items-center justify-center bg-gray-200 p-4 rounded-2xl shadow-md hover:bg-gray-300"
           >
             <FaYoutube className="mr-4" />
-            My Github Profile
+            My YouTube 
           </a>
           <a
             href="https://github.com/kutlwano10"
             className="flex items-center justify-center bg-gray-200 p-4 rounded-2xl shadow-md hover:bg-gray-300"
           >
             <FaTwitch className="mr-4" />
-            My Github Profile
+            My Twitch
           </a>
           <a
             href="https://github.com/kutlwano10"
             className="flex items-center justify-center bg-gray-200 p-4 rounded-2xl shadow-md hover:bg-gray-300"
           >
             <FaDiscord className="mr-4" />
-            My Github Profile
+            My Discord
           </a>
           <a
             href="https://github.com/kutlwano10"
             className="flex items-center justify-center bg-gray-200 p-4 rounded-2xl shadow-md hover:bg-gray-300"
           >
             <FaLinkedin className="mr-4" />
-            My Github Profile
+            My LinkedIn
           </a>
         </div>
       </div>

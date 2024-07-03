@@ -7,7 +7,7 @@ import sign from "../assets/sign.png";
 const SearchUser = () => {
   return (
     <div className="flex justify-between bg-white p-2">
-        <Link to=".." relative='path' className="w-9 ">
+        <Link to=".." relative='path' className="w-8 ">
           <img src={homeIcon} alt="" />
         </Link>
         <div className='flex items-center'>
