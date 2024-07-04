@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState} from "react";
 import background from "../assets/background.jpg";
 import profileImg from "../assets/img.jpg";
 import Header from "../components/Header";
@@ -10,6 +10,21 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 const Settings = () => {
+  const [name, setName] = useState('')
+  const [lastName, setLastName] = useState('')
+  const [bio, setBio] = useState('')
+  const [githubUrl, setGithubUrl] = useState('')
+  const [youTubeUrl, setYoutubeUrl] = useState('')
+  const [twitchUrl, setTwitchUrl] = useState('')
+  const [discordUrl, setDiscordUrl] = useState('')
+  const [linkedInUrl, setLinkedInUrl] = useState('')
+
+
+  const handleSubmit=(e)=> {
+    e.preventDefault()
+    console.log({name, lastName, bio, githubUrl, youTubeUrl})
+  }
+
   return (
     <>
       <Header />
@@ -31,25 +46,25 @@ const Settings = () => {
           </div>
           <form className="mt-32  grid " action="">
             <label>Name: </label>
-            <input className="border" type="text" placeholder="" />
+            <input onChange={(e) => setName(e.target.value)} className="border" type="text" placeholder="" />
             <label>Surname: </label>
-            <input className="border" type="text" placeholder="" />
+            <input onChange={(e) => setLastName(e.target.value)}  className="border" type="text" placeholder="" />
             <label>Bio: </label>
-            <input className="border" type="text" placeholder="" />
+            <input onChange={(e) => setBio(e.target.value)}  className="border" type="text" placeholder="" />
 
             <label className="flex items-center gap-2"><FaGithub/>Github: </label>
-            <input className="border" type="url" placeholder="" />
+            <input onChange={(e) => setGithubUrl(e.target.value)}  className="border" type="url" placeholder="" />
             <label className="flex items-center gap-2"><FaYoutube/>YouTube: </label>
-            <input className="border" type="url" placeholder="" />
+            <input onChange={(e) => setYoutubeUrl(e.target.value)}  className="border" type="url" placeholder="" />
             <label className="flex items-center gap-2"><FaLinkedin/>LinkedIn: </label>
-            <input className="border" type="url" placeholder="" />
+            <input onChange={(e) => setLinkedInUrl(e.target.value)}  className="border" type="url" placeholder="" />
             <label className="flex items-center gap-2"><FaTwitch/>Twitch: </label>
-            <input className="border" type="url" placeholder="" />
+            <input onChange={(e) => setTwitchUrl(e.target.value)}  className="border" type="url" placeholder="" />
             <label className="flex items-center gap-2" ><FaDiscord/>Discord: </label>
-            <input className="border" type="url" placeholder="" />
+            <input onChange={(e) => setDiscordUrl(e.target.value)}  className="border" type="url" placeholder="" />
             
           </form>
-          <button className="border p-2 px-12 flex rounded-lg ">Submit</button>
+          <button onClick={handleSubmit} className="border p-2 px-12 flex rounded-lg ">Submit</button>
         </div>
       </div>
     </>
